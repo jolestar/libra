@@ -94,7 +94,7 @@ pub struct ClientProxy {
     /// Account used for mint operations.
     pub faucet_account: Option<AccountData>,
     /// Wallet library managing user accounts.
-    wallet: WalletLibrary,
+    pub wallet: WalletLibrary,
     /// Whether to sync with validator on account creation.
     sync_on_wallet_recovery: bool,
     /// etoken issue account
@@ -878,7 +878,7 @@ impl ClientProxy {
         Ok(account)
     }
 
-    fn mint_coins_with_local_faucet_account(
+    pub fn mint_coins_with_local_faucet_account(
         &mut self,
         receiver: &AccountAddress,
         num_coins: u64,

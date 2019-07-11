@@ -110,7 +110,7 @@ mod counters;
 mod frame;
 mod gas_meter;
 mod move_vm;
-mod process_txn;
+pub mod process_txn;
 mod proptest_types;
 mod runtime;
 mod value_serializer;

@@ -41,6 +41,9 @@ compiler = { path = "../language/compiler"}
 bytecode_verifier = { path = "../language/bytecode_verifier"}
 vm = { path = "../language/vm"}
 canonical_serialization = {path = "../common/canonical_serialization"}
+vm_runtime = {path = "../language/vm/vm_runtime"}
+vm_cache_map = {path = "../language/vm/vm_runtime/vm_cache_map"}
+state_view = {path = "../storage/state_view"}
 
 [dev-dependencies]
 tempfile = "3.0.6"

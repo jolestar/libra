@@ -66,7 +66,7 @@ where
     /// Creates a new instance by validating a `SignedTransaction`.
     ///
     /// This should be called through [`ProcessTransaction::validate`].
-    pub(super) fn new(
+    pub fn new(
         process_txn: ProcessTransaction<'alloc, 'txn, P>,
         mode: ValidationMode,
         publishing_option: &VMPublishingOption,

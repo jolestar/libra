@@ -23,6 +23,7 @@ pub(crate) mod submit_transaction_command;
 pub(crate) mod transfer_commands;
 pub(crate) mod hack_commands;
 pub(crate) mod etoken_resource;
+pub(crate) mod local_executor;
 
 /// Struct used to store data for each created account.  We track the sequence number
 /// so we can create new transactions easily

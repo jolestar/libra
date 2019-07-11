@@ -56,8 +56,8 @@ fn main() -> std::io::Result<()> {
     let (commands, alias_to_cmd) = get_commands();
 
     let args = Args::from_args();
+    println!("args:{:#?}", args);
     let faucet_account_file = args.faucet_account_file.unwrap_or_else(|| "".to_string());
-
     let mut client_proxy = ClientProxy::new(
         &args.host,
         &args.port,

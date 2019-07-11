@@ -38,7 +38,7 @@ where
     P: ModuleCache<'alloc>,
 {
     /// Creates a new instance by verifying the bytecode in this validated transaction.
-    pub(super) fn new(
+    pub fn new(
         mut validated_txn: ValidatedTransaction<'alloc, 'txn, P>,
     ) -> Result<Self, VMStatus> {
         let txn_state = validated_txn.take_state();
